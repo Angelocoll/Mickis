@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        
+         <a href="/index.html" class="logo">Portfölj</a>
+         <div class="tel-nav">
+
+         </div>
+        <div class="nav">
+       <div class="navitem">
+           <a href="/index.html">Startsidan</a>
+           <a href="/About.html">CV</a>
+           <a href="/projekts.html">Galleri</a>
+           
+           <a href="/contact.html">Kontakta Mig</a>
+           
+           
+       </div>
+        </div>
+
+    </header>
+    <main>
+
+    <section class="home">
+        
+        <div class="content">
+           <h1> Min Design <br> <span> Resa </span></h1>
+           <p>
+            Som Inrednings-Arkitekt student har jag haft möjligheten att studera
+             och lära mig om olika inredningstilar och tekniker. <br>
+             Det har varit en spännande och lärorik resa genom böcker, 
+             kurser och workshops. <br> Nu är jag redo att ta an inredningsbranchen.
+           </p>
+             <a href="/About.html" class="read-more">Läs mer</a>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/michaela.wahrling"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            
+
+        </div>
+    </section>
+      <script type="text/javascript">
+        /*javascript meny knapp*/
+        const menybtn = document.querySelector(".tel-nav")
+        const nav = document.querySelector(".nav")
+        menybtn.addEventListener("click", () =>{
+            menybtn.classList.toggle("active");
+            nav.classList.toggle("active");
+
+        });
+
+
+      </script>
+    
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
