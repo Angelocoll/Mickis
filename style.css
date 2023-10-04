@@ -620,6 +620,9 @@ align-items: center;
          font-size: 0.8em;
          
      }
+     .slider{
+        aspect-ratio: 4 / 7;
+     }
      .about .media-icons{
         display: none;
      }     
