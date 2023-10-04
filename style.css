@@ -620,7 +620,9 @@ align-items: center;
          font-size: 0.8em;
          
      }
-     
+     .about .media-icons{
+        display: none;
+     }     
      header{
          
          padding: 12px 20px;
