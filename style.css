@@ -417,7 +417,7 @@ align-items: center;
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    
+     object-fit: cover;    
 }
 .slider-nav{
     display: flex;
