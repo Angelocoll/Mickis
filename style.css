@@ -417,7 +417,7 @@ align-items: center;
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-    object-fit: cover;
+    
 }
 .slider-nav{
     display: flex;
@@ -444,38 +444,6 @@ align-items: center;
 
 
 
-@media (max-width: 440px) {
-    .slider-nav {
-        
-        bottom: 15rem;
-        
-    }
-    
-}
-@media (max-width: 420px) {
-    .slider-nav {
-        
-        bottom: 28rem;
-        
-    }
-    
-}
-@media (max-width: 390px) {
-    .slider-nav {
-        
-        bottom: 26rem;
-        
-    }
-    
-}
-@media (max-width: 380px) {
-    .slider-nav {
-        
-        bottom: 15rem;
-        
-    }
-    
-} 
 
 
 @media (max-width:745px) {
