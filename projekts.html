@@ -11,17 +11,17 @@
     <header>
         
         
-         <a href="/Mickis/" class="logo">Portfölj</a>
+         <a href="/index.html" class="logo">Portfölj</a>
          <div class="tel-nav">
 
          </div>
         <div class="nav">
        <div class="navitem">
-           <a href="/Mickis/">Startsidan</a>
-           <a href="/Mickis/About.html">CV</a>
-           <a href="/Mickis/projekts.html">Galleri</a>
+           <a href="/index.html">Startsidan</a>
+           <a href="/About.html">CV</a>
+           <a href="/projekts.html">Galleri</a>
            
-           <a href="/Mickis/contact.html">Kontakta Mig</a>
+           <a href="/contact.html">Kontakta Mig</a>
            
            
        </div>
@@ -30,31 +30,24 @@
     </header>
     <main>
 
-    <section class="about">
-        <h1 class="h1s"> Galleri </h1>
-        <div class="container">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img id="slide-1" src="Indredning 1.jpg" alt="inredning">
-                    <img id="slide-2" src="Inredning 2.jpg" alt="inredning">
-                    <img id="slide-3" src="Inredning 3.jpg" alt="inredning">
-
-                </div>
-                <div class="slider-nav">
-        
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-        
-                </div>
-    </div>
-</div>
-        
-        
+    <section class="home">
+        <div class="content">
+        <img class="imge" src="Indredning 1.jpg" alt="">
+        <img class="imge" src="Inredning 2.jpg" alt="">
+        <img class="imge" src="Inredning 3.jpg" alt="">
+        </div>
+       
         <div class="media-icons">
             <a href="https://www.facebook.com/michaela.wahrling"><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
             <a href=""><i class="fab fa-linkedin"></i></a>
+            
+
+        </div>
+        <div class="slider-nav">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
             
 
         </div>
@@ -68,6 +61,31 @@
             nav.classList.toggle("active");
 
         });
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".imge");
+
+        var sliderNav = function (manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+
+            });
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+
+        }
+        btns.forEach((btn, i) =>{
+            btn.addEventListener("click",() => {
+            sliderNav(i);
+
+            });
+            
+        });
+
 
 
       </script>
