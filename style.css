@@ -69,11 +69,22 @@ section{
     flex-direction: column;
     background: rgb(168, 168, 140);
 }
+
 .home .content {
     z-index: 888;
     color: #000000;
     width: 70%;
     margin-top: 50px;
+}
+.home .contenttt {
+    z-index: 888;
+    color: #000000;
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home .content h1{
     font-size: 4em;
@@ -83,6 +94,13 @@ section{
     line-height: 75px;
     margin-bottom: 40px;
 
+}
+ .imge{
+    z-index: 000;
+    border: #000000 solid 4px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
 }
 .home .content h1 span{
     font-size: 1.2em;
@@ -132,15 +150,6 @@ section{
     
 }
 .home video{
-    z-index: 000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.home .imge{
     z-index: 000;
     position: absolute;
     top: 0;
@@ -404,12 +413,13 @@ align-items: center;
 
 .slider-nav{
     z-index: 888;
-    position: relative;
+    
     display: flex;
     justify-content: center;
     align-items:center;
     transform: translateY(80px);
     margin-bottom: 12px ;
+    margin-top: 400px;
 }
 .nav-btn{
     width: 18px;
@@ -434,15 +444,16 @@ align-items: center;
     background: rgb(0, 0, 0);
 }
 
-.imge{
+ .imge{
     position: absolute;
-    width: 100%;
+    
     clip-path: circle(0% at 0 50%);
 }
 .imge.active{
     clip-path: circle(150% at 0 50%);
     transition: 2s ease;
     transition-property: clip-path;
+    
     
 }
 
